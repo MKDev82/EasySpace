@@ -1,0 +1,164 @@
+<!doctype>
+<html>
+
+<head>
+    <title>test1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="miniNavBar">
+            <div style="margin-left: 10px;margin-right: auto;color: white;">Easy Space</div>
+            <div class="btnMenu" id="btnMenu" onclick="menuButton(this)">
+            <div class="barMenu1"></div>
+            <div class="barMenu2"></div>
+            <div class="barMenu3"></div>
+            </div>
+        </div>    
+        <div class="navbar">
+            <div class="logo">    
+                <img src="img/logo_green.jpg">
+            </div>
+            <div class="menu">
+                <a href="">ПРОЕКТИ</a>
+                <a href="">ПРО НАС</a>
+                <a href="">ОТЗЫВЫ</a>
+                <a href="">ПАРТНЕРАМ</a>
+                <a href="">КОНТАКТЫ</a>
+            </div>
+            <div class="socMedia">
+                <a href="https://www.facebook.com/" class="fa fa-facebook-square iconSocMedia"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram iconSocMedia"></a>
+                <a href="https://www.behance.net/" class="fa fa-behance-square iconSocMedia"></a>
+            </div>
+        </div>
+        <div class="maincontent">
+            <div class="box">
+                <img src="img/proj_1_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 1</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_2_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 2</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_3_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 3</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_1_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 1</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_2_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 2</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_3_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 3</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_1_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 1</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_2_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 2</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_3_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 3</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_1_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 1</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_2_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 2</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_3_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 3</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_1_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 1</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_2_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 2</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_3_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 3</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_1_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 1</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_2_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 2</div>
+            </div>
+            <div class="box">
+                <img src="img/proj_3_img_1.jpg" class="image">
+                <div class="overlay"></div>
+                <div class="text">ПРОЕКТ 3</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function menuButton(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+
+
+    <script>
+
+        document.getElementById("btnMenu").addEventListener("click", open_close);
+
+        var menuState = 0 // close
+        function open_close() {
+          if(menuState === 0){
+             menuState = 1;
+             document.getElementById("navbar").style.width = "200px";
+             //document.getElementById("main").style.marginLeft = "250px";
+             //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+          else {
+             menuState = 0;
+             document.getElementById("navbar").style.width = "0";
+             //document.getElementById("main").style.marginLeft = "0";
+             //document.body.style.backgroundColor = "white";
+            }
+          console.log(menuState);
+        }
+
+    </script>
+
+</body>
+
+</html>
